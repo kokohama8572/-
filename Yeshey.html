@@ -3,132 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>응야 위키</title>
-    <style>
-        /* 1. 전체 기본 설정 */
-        body { 
-            margin: 0; 
-            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; 
-            background-color: #f3f4f5; /* 위키 특유의 연한 회색 배경 */
-            color: #333; 
-        }
-        a { text-decoration: none; color: #0275d8; }
-        a:hover { text-decoration: underline; }
-
-        /* 2. 상단 헤더 (나무위키 스타일의 청록색) */
-        header { 
-            background-color: skyblue; 
-            color: rgb(138, 96, 166); 
-            padding: 15px 20px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-        }
-        header .logo { font-size: 24px; font-weight: bold; }
-        header .search-bar input { 
-            padding: 7px 10px; 
-            border: none; 
-            border-radius: 3px; 
-            outline: none; 
-            width: 200px;
-        }
-
-        /* 3. 전체 화면 레이아웃 분할 */
-        .container { 
-            display: flex; 
-            max-width: 1200px; 
-            margin: 20px auto; 
-            padding: 0 15px; 
-        }
-
-        /* 4. 왼쪽 메뉴바 (사이드바) */
-        .sidebar { 
-            width: 200px; 
-            margin-right: 20px; 
-            background: white; 
-            padding: 15px; 
-            border: 1px solid #ccc; 
-            height: fit-content; 
-        }
-        .sidebar ul { list-style: none; padding: 0; margin: 0; }
-        .sidebar ul li { margin-bottom: 12px; font-size: 15px; }
-        .sidebar ul li a { color: #555; }
-
-        /* 5. 메인 본문 영역 */
-        .main-content { 
-            flex: 1; 
-            background: white; 
-            padding: 30px; 
-            border: 1px solid #ccc; 
-        }
-        
-        /* 6. 제목 및 목차 스타일 */
-        .document-title { font-size: 32px; border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-top: 0; }
-        
-        .toc { 
-            border: 1px solid #ccc; 
-            background-color: #f9f9f9; 
-            padding: 15px; 
-            margin: 20px 0; 
-            display: inline-block; 
-            min-width: 250px;
-        }
-        .toc-title { font-weight: bold; margin-bottom: 10px; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        .toc ul { list-style: none; padding-left: 10px; margin: 0; }
-        .toc ul li { margin-bottom: 5px; font-size: 14px; }
-        .toc ul li ul { padding-left: 15px; margin-top: 5px; } /* 하위 목차 들여쓰기 */
-
-        /* 7. 본문 제목들 (h2, h3) */
-        h2 { font-size: 22px; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px; }
-        h3 { font-size: 18px; margin-top: 20px; color: #444; }
-
-        /* 8. 본문 텍스트 및 위키 특수 효과 */
-        p { line-height: 1.6; font-size: 15px; }
-        .wiki-bold { font-weight: bold; }
-        .wiki-del { text-decoration: line-through; color: gray; }
-        .wiki-quote { border-left: 4px solid #008275; background: #f9f9f9; padding: 10px; margin: 15px 0; color: #555; }
-    </style>
+    <title>응야위키</title>
+    <link rel="stylesheet" href="../web(yeshey)/CSS/YesheyWiki.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/mona.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/monas.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">응야 위키</div>
-        <div class="search-bar">
-            <input type="text" placeholder="검색...">
-        </div>
+    <header class="top-header">
+        <h1>응 야 위 키</h1>
     </header>
-
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-                <li><a href="#">대문(홈)</a></li>
-                <li><a href="#">최근 변경</a></li>
-            </ul>
-        </nav>
-
-
-            <div class="content">
-                <h2 id="sec1">1. 개요</h2>
-                <p>우리 응야의 대표 게이 <span class="wiki-bold">홍건우</span>에 대한 문서이다. <span class="wiki-del">.</span></p>
-
-                <h2 id="sec2">2. 상세 내용</h2>
-                <p>홍게.</p>
-
-                <h3 id="sec2-1">2.1. 성격</h3>
-                <p>지랄맞다.</p>
-
-                <h3 id="sec2-2">2.2. 취미</h3>
-                <p>리그오브레전드라는 게임을 좋아한다.</p>
-
-                <h2 id="sec3">3. 여담</h2>
-                <ul>
-                    <li>백원진,장종목과 상당히 비슷하게 생겼다</li>
-                    <li>.</li>
-
-                </ul>
-            </div>
-        </main>
-    </div>
 
 </body>
 </html>
