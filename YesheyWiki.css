@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: '궁서체', sans-serif; /* 웹사이트 전체에 폰트 적용 완료 */
+    font-size: larger;
+}
+
+/* 헤더 배경 및 레이아웃 설정 */
+.top-header {
+    background-color: #E0F2FE; 
+    padding: 20px 80px; 
+    text-align: left; 
+    border-bottom: 1px solid #BAE6FD; 
+}
+
+/* 헤더 안의 제목(h1) 디자인 */
+.top-header h1 {
+    font-family: 'Mona12', sans-serif;
+    margin: 0; 
+    color: #0369A1; 
+    font-weight: 700; 
+    letter-spacing: -1px;
+}
+
+.body p{
+    padding: 0px 50px;
+}
